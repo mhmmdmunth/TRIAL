@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@media print {
+  /* Hide all non-printable UI elements */
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 10pt !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Hide screen-only modal components, header, navigation, and buttons */
+  .bapo-screen-only,
+  header,
+  nav,
+  aside,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Make print sheet visible, unconstrained, and clean */
+  #bapo-print-sheet {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+  }
+
+  /* Remove fixed backdrop constraints */
+  .fixed.inset-0 {
+    position: static !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .bg-slate-900\/70,
+  .bg-slate-900\/60 {
+    background: transparent !important;
+  }
+
+  .max-h-\[92vh\],
+  .max-h-\[90vh\] {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .bg-white {
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .page-break-inside-avoid {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    page-break-inside: auto !important;
+  }
+
+  tr {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  thead {
+    display: table-header-group !important;
+  }
+
+  tfoot {
+    display: table-footer-group !important;
+  }
+
+  @page {
+    size: A4 landscape;
+    margin: 10mm;
+  }
+}

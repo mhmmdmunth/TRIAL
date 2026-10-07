@@ -1,0 +1,8 @@
+{
+  "name": "Remix PMT-Project01",
+  "description": "Aplikasi pembuatan \u0026 estimasi list perbaikan kapal di galangan kapal untuk tim PMT, dengan kalkulator tonase baja, survey kerusakan offline, integrasi SQLite lokal, dan ekspor laporan PDF standar galangan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
